@@ -1,0 +1,299 @@
+/* Prevent horizontal overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Notifications Bell */
+.notifications-bell-top-menu {
+    position: absolute; /* Use absolute positioning */
+    top: 19px; /* Adjust this value to move it up or down */
+    right: 85px; /* Adjust this value to move it left or right */
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    z-index: 1001; /* Ensure it's above other elements */
+}
+
+.notification-dot {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Notifications Dropdown */
+.notifications-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff; /* White background for better contrast */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 12px; /* Slightly larger border radius for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    z-index: 1001;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 280px; /* Slightly wider for better readability */
+}
+
+.notifications-list {
+    padding: 10px;
+}
+
+.notification-item {
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0; /* Light gray border between items */
+    cursor: pointer;
+    color: #333333; /* Dark gray text for better contrast */
+    font-size: 14px; /* Slightly larger font size */
+    transition: background-color 0.2s ease; /* Smooth hover transition */
+}
+
+.notification-item.unread {
+    background-color: #dce7ff; /* Light gray background for unread notifications */
+    font-weight: 600; /* Semi-bold for unread items */
+}
+
+.notification-item:hover {
+    background-color: #e9ecef; /* Light gray hover effect */
+}
+
+/* Notification Details Modal */
+.notification-details-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+}
+
+.notification-details-content {
+    background-color: #ffffff; /* White background for the modal */
+    padding: 24px; /* More padding for a spacious look */
+    border-radius: 12px; /* Rounded corners */
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+}
+
+.notification-details-content h3 {
+    margin-top: 0;
+    color: #333333; /* Dark gray for the title */
+    font-size: 18px; /* Larger font size for the title */
+    font-weight: 600; /* Semi-bold for emphasis */
+}
+
+.notification-details-content p {
+    color: #555555; /* Medium gray for the details */
+    font-size: 14px; /* Standard font size for readability */
+    line-height: 1.5; /* Improved line spacing */
+}
+
+.notification-details-content button {
+    margin-top: 16px; /* More space above the button */
+    padding: 10px 20px; /* Larger padding for better clickability */
+    background-color: #007bff; /* Blue background for the button */
+    color: #ffffff; /* White text for contrast */
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    font-size: 14px; /* Standard font size */
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth hover transition */
+}
+
+.notification-details-content button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Top Navbar */
+/* Top Navbar */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #1a1a2e, #002244); /* Modern gradient background */
+    color: #f8f9fa; /* Light text color for contrast */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keeps it on top of other content */
+    height: 60px; /* Consistent height for spacing */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 100%; /* Ensure navbar doesn't overflow */
+    box-sizing: border-box; /* Include padding in width */
+    font-family: 'Poppins', sans-serif; /* Sleek font */
+}
+
+/* Logo or Title */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Left Section (Hamburger Menu and Profile) */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between hamburger icon and profile image */
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #fff; /* White border for better visibility */
+    cursor: pointer;
+    object-fit: cover; /* Ensures the image fits well */
+}
+
+/* Profile Dropdown Menu */
+.profile-menu {
+    position: absolute;
+    top: 60px; /* Aligns just below the navbar */
+    right: 20px; /* Aligns with the profile image */
+    background-color: #444; /* Matches the theme of the navbar */
+    color: white;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1001; /* Ensure it's above other content */
+    min-width: 180px; /* Sets a consistent width */
+    overflow: hidden; /* Prevent content from spilling out */
+    animation: fadeIn 0.2s ease-in; /* Smooth fade-in effect */
+}
+
+.profile-menu ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.profile-menu-item {
+    padding: 10px 15px; /* Add spacing for better touch targets */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+    border-bottom: 1px solid #555; /* Divider between items */
+}
+
+.profile-menu-item:last-child {
+    border-bottom: none; /* No divider for the last item */
+}
+
+.profile-menu-item a {
+    text-decoration: none;
+    color: white;
+    display: block; /* Full clickable area */
+    font-size: 14px; /* Consistent font size */
+}
+
+.profile-menu-item:hover {
+    background-color: #555; /* Highlight on hover */
+}
+
+.profile-menu-item a:hover {
+    color: #ddd; /* Lighter color for hover effect */
+}
+
+/* Subtle Animation for Dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Slight upward motion */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Settles into position */
+    }
+}
+
+/* Accordion Hamburger Menu */
+.hamburger-menu {
+    overflow: hidden; /* Ensures smooth transition */
+    transition: max-height 0.3s ease-out; /* Smooth animation */
+    background-color: #444;
+    max-height: 0; /* Initially hidden */
+    width: 100%; /* Full-width dropdown */
+    padding: 0; /* Reset padding to control spacing */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.hamburger-menu.open {
+    max-height: 1000px; /* Large enough to accommodate the menu items */
+}
+
+.hamburger-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure no overflow */
+}
+
+.hamburger-menu .menu-item {
+    padding: 10px 15px; /* Consistent padding for left and right */
+    border-bottom: 1px solid #555;
+    box-sizing: border-box; /* Prevent padding from causing overflow */
+}
+
+.hamburger-menu .menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    display: block; /* Ensure links take full width */
+    width: 100%; /* Prevent overflow */
+    padding: 5px 15px; /* Consistent left and right padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.menu-link:hover {
+    background-color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 968px) {
+    .dashboard-content {
+        margin-top: 80px; /* Adjust if the navbar height increases on mobile */
+    }
+
+    .top-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto; /* Allow flexibility for smaller screens */
+        width: 100%; /* Ensure navbar doesn't overflow */
+    }
+
+    .hamburger-menu {
+        width: 100%; /* Full-width dropdown on smaller screens */
+    }
+
+    .hamburger-menu .menu-item {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .top-navbar .logo {
+        margin-bottom: 20px;
+    }
+
+    .left-section {
+        width: 100%; /* Stretch to fill the available space */
+        justify-content: space-between; /* Align hamburger and profile at ends */
+    }
+}

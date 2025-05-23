@@ -1,0 +1,93 @@
+/* StaffTable.css */
+.staff-table-container {
+  width: 100%;
+  overflow-x: auto; /* Allows horizontal scroll on smaller screens */
+  margin-top: 20px; /* Adds some space on top */
+}
+
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+.staff-table th,
+.staff-table td {
+  border: 1px solid #ddd; /* Light border color */
+  padding: 12px 15px; /* Slightly larger padding for a more spacious feel */
+  text-align: left;
+  vertical-align: middle;
+  font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+/* Header customization with vibrant colors */
+.staff-table th {
+  background-color: #4CAF50; /* Green background for header */
+  color: #fff; /* White text color for contrast */
+  font-weight: bold;
+  text-transform: uppercase; /* Adds uppercase text for headers */
+  letter-spacing: 1px; /* Adds slight letter spacing for headers */
+}
+
+/* Soft alternating row colors */
+.staff-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+.staff-table tr:nth-child(odd) {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+/* Hover effect applied only to table rows (not headers) */
+.staff-table tr:hover {
+  background-color: #e8f5e9; /* Light green hover effect */
+  transform: translateY(-2px); /* Adds a lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow on hover for depth */
+}
+
+/* Ensure header rows don't have hover effect */
+.staff-table th {
+  pointer-events: none; /* Prevents hover effect on headers */
+}
+
+.staff-table td {
+  word-wrap: break-word;
+  max-width: 250px; /* Increased max-width for better text fitting */
+  color: #555; /* Softer text color */
+}
+
+.staff-table td a {
+  color: #FF9800; /* Orange links for a pop of color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.staff-table td a:hover {
+  color: #f57c00; /* Darker orange on hover */
+}
+
+.staff-table td img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .staff-table th,
+  .staff-table td {
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Reduce font size for mobile */
+  }
+
+  .staff-table td {
+    max-width: 150px; /* Reduce max width for smaller screens */
+  }
+
+  .staff-table {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}

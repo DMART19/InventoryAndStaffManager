@@ -1,0 +1,425 @@
+/* Calendar Page */
+.calendar-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+/* Calendar Content */
+.calendar-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 0px; /* Should match the width of the side menu */
+  background-color: #fff;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Page Heading */
+.calendar-content h2 {
+  font-size: 28px; /* Slightly larger for emphasis */
+  font-weight: 600; /* Semi-bold for a modern look */
+  color: #2c3e50; /* Darker, more sophisticated color */
+  margin-top: -20px;
+  margin-bottom: -5px;
+  text-align: center;
+}
+
+/* Uniform Button Styling */
+.add-event-button,
+.connect-calendar-button,
+.export-button {
+  display: inline-block;
+  margin: 0 10px 20px 0; /* Consistent margin */
+  padding: 10px 20px; /* Consistent padding */
+  color: #fff; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Standard font size */
+  font-weight: 500; /* Medium font weight */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Add Event Button */
+.add-event-button {
+  background-color: #007bff; /* Blue background */
+}
+
+.add-event-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.add-event-button:active {
+  background-color: #004080; /* Even darker blue on click */
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+.add-event-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add a focus ring */
+}
+
+/* Connect Calendar Button */
+.connect-calendar-button {
+  background-color: #28a745; /* Green background */
+}
+
+.connect-calendar-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.connect-calendar-button:active {
+  background-color: #1e7e34; /* Even darker green on click */
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+.connect-calendar-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); /* Add a focus ring */
+}
+
+/* Export Button */
+.export-button {
+  background-color: #17a2b8; /* Teal background */
+}
+
+.export-button:hover {
+  background-color: #138496; /* Darker teal on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.export-button:active {
+  background-color: #117a8b; /* Even darker teal on click */
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+.export-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5); /* Add a focus ring */
+}
+
+/* Export Options Modal */
+.export-options-modal {
+  position: fixed; /* Position the modal fixed on the screen */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the modal */
+  background-color: white;
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 12px; /* Slightly larger border radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+  z-index: 1000; /* Ensure it appears above other elements */
+  width: 320px; /* Fixed width for consistency */
+  text-align: center; /* Center-align the content */
+}
+
+.export-options-modal h3 {
+  margin-bottom: 20px; /* Add space below the title */
+  font-size: 20px; /* Larger font size for the title */
+  color: #333; /* Dark gray for better contrast */
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 15px; /* Add space between buttons */
+}
+
+/* Button Styling */
+.export-options-modal button {
+  width: 100%; /* Full width buttons */
+  padding: 12px 20px; /* Increased padding for better clickability */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Standard font size */
+  font-weight: 500; /* Medium font weight */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.export-options-modal button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.export-options-modal button:active {
+  background-color: #004080; /* Even darker blue on click */
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+.export-options-modal button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add a focus ring */
+}
+
+/* Cancel Button Styling */
+.export-options-modal button:last-child {
+  background-color: #6c757d; /* Gray background for the cancel button */
+}
+
+.export-options-modal button:last-child:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Overlay for the modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 999; /* Ensure it appears below the modal but above other content */
+}
+
+/* Connect Calendar Modal */
+.connect-calendar-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  max-width: 400px;
+  width: 90%;
+}
+
+.connect-calendar-modal button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.connect-calendar-modal button:last-child {
+  background-color: #6c757d;
+}
+
+.connect-calendar-modal button:hover {
+  opacity: 0.9;
+}
+
+/* Modal Styles for Adding Event */
+.add-event-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  max-width: 500px; /* Limit max width for better UX */
+  width: 90%; /* Responsive width */
+}
+
+/* Modal Inputs and Labels */
+.add-event-modal .modal-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-event-modal input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Modal Buttons */
+.add-event-modal .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-event-modal button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-event-modal button:first-child {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.add-event-modal button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.add-event-modal button:last-child {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.add-event-modal button:last-child:hover {
+  background-color: #5a6268;
+}
+
+/* Event Details Popup */
+.event-details-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  max-width: 500px; /* Limit max width for better UX */
+  width: 90%; /* Responsive width */
+}
+
+.popup-content {
+  text-align: left;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Search and Filter Container */
+.search-and-filter {
+  display: flex;
+  gap: 15px; /* Space between elements */
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Search Input */
+.search-and-filter input[type="text"] {
+  padding: 10px 15px; /* Adjusted padding */
+  font-size: 14px;
+  border: 2px solid #e0e0e0; /* Light gray border */
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  flex: 1; /* Take up remaining space */
+}
+
+.search-and-filter input[type="text"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Subtle glow effect */
+}
+
+.search-and-filter input[type="text"]::placeholder {
+  color: #999; /* Light gray placeholder text */
+}
+
+/* Select Dropdowns */
+.search-and-filter select {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 2px solid #e0e0e0; /* Light gray border */
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-and-filter select:hover {
+  border-color: #007bff; /* Blue border on hover */
+}
+
+.search-and-filter select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Subtle glow effect */
+}
+
+/* Custom Arrow for Select Dropdowns */
+.search-and-filter select {
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592c.859 0 1.319 1.013.753 1.658l-4.796 5.48a1 1 0 01-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 35px; /* Space for custom arrow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .search-and-filter {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    gap: 10px;
+  }
+
+  .search-and-filter input[type="text"],
+  .search-and-filter select {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .calendar-content h2 {
+    padding-top: 75px;
+    margin-bottom: 5px;
+  }
+
+  .calendar-page {
+    flex-direction: column; /* Stack calendar components on smaller screens */
+  }
+
+  .side-menu-container {
+    display: none; /* Hide side menu on mobile */
+  }
+
+  .calendar-content {
+    margin-left: 0; /* Remove left margin for small screens */
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .add-event-button {
+    font-size: 14px; /* Adjust button size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .add-event-modal {
+    width: 80%; /* Make modal content take more space on smaller screens */
+  }
+
+  .event-details-popup {
+    width: 80%; /* Make event details popup take more space on smaller screens */
+  }
+
+  /* Adjust modal inputs for smaller screens */
+  .add-event-modal input {
+    font-size: 14px; /* Adjust input size */
+    padding: 6px; /* Adjust input padding */
+  }
+
+  /* Adjust buttons in modal for smaller screens */
+  .add-event-modal button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

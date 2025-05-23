@@ -1,0 +1,70 @@
+/* General Styles */
+.tutorial-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tutorial-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tutorial-container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.tutorial-container ol {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.tutorial-container ol li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.tutorial-container strong {
+  color: #6200ea; /* Purple color for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .tutorial-container {
+    padding: 20px;
+  }
+
+  .tutorial-container h1 {
+    font-size: 22px;
+  }
+
+  .tutorial-container p {
+    font-size: 14px;
+  }
+
+  .tutorial-container ol li {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,182 @@
+/* Chatbot Icon */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2980B9; /* Primary blue for the icon background */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1001; /* Ensure it stays above other elements */
+    opacity: 50%;
+}
+
+.chatbot-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.chatbot-icon:hover {
+    background-color: #3498DB; /* Lighter blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 100%;
+}
+
+/* Chatbot Section Enhancements */
+.chatbot-section {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, bottom 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Adjust height as needed */
+    border-top: 4px solid #2980B9; /* Add a colored border at the top */
+}
+
+.chatbot-section .chatbot {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9; /* Light background for chat content */
+    border-bottom: 1px solid #ddd; /* Subtle bottom border */
+}
+
+.chatbot-section .chatbot-header {
+    background-color: #2980B9;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-section .chatbot-footer {
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.chatbot-section .chatbot-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.chatbot-section .chatbot-footer input:focus {
+    border-color: #2980B9;
+}
+
+.chatbot-section .chatbot-footer button {
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chatbot-section .chatbot-footer button:hover {
+    background-color: #3498DB;
+}
+
+/* Message Styling */
+.chatbot-section .message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.chatbot-section .message.user {
+    background-color: #e1f5fe;
+    align-self: flex-end;
+    color: #333;
+}
+
+.chatbot-section .message.bot {
+    background-color: #f1f8e9;
+    align-self: flex-start;
+    color: #333;
+}
+
+.chatbot-section .message.user:after,
+.chatbot-section .message.bot:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+}
+
+.chatbot-section .message.user:after {
+    bottom: -18px;
+    right: 10px;
+    border-top-color: #e1f5fe;
+}
+
+.chatbot-section .message.bot:after {
+    bottom: -18px;
+    left: 10px;
+    border-top-color: #f1f8e9;
+}
+
+/* Close Button for Chatbot */
+.chatbot-section .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #E74C3C; /* Red background for the close button */
+    border: 2px solid #C0392B; /* Darker red border */
+    border-radius: 50%; /* Circular button */
+    width: 25px; /* Width of the button */
+    height: 25px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: white; /* White text for contrast */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chatbot-section .close-button:hover {
+    color: #C0392B; /* Darker red on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+.chatbot-section .close-button:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+}
+.close-button{
+    
+    margin: 11px;
+}

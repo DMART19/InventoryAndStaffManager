@@ -1,0 +1,242 @@
+/* Global Colors */
+:root {
+    --primary-color: #4CAF50; /* Modern green for active state */
+    --secondary-color: #0288d1; /* Bright blue for buttons and links */
+    --hover-color: #006db3; /* Hover effect for buttons */
+    --background-color: #f9f9f9; /* Light background color for a clean look */
+    --text-color: #333; /* Text color for readability */
+    --border-color: #ddd; /* Subtle borders */
+    --highlight-color: #f1f8e9; /* Subtle background for selected items */
+}
+
+/* Add-Ons Category */
+.add-ons-category {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    animation: pulse 6s infinite; /* Apply pulse animation */
+}
+
+.add-ons-category:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); /* Enhance hover effect */
+}
+
+.add-ons-category h4 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Setting Item */
+.setting-item label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.setting-item input[type="checkbox"] {
+    width: auto;
+    height: 18px;
+    margin-right: 12px;
+}
+
+.setting-item input[type="checkbox"]:checked {
+    background-color: var(--primary-color); /* Green for checked state */
+}
+
+/* Main Settings Page */
+.settings-page {
+    display: flex;
+    height: 100vh;
+    background-color: var(--background-color);
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.side-menu-container {
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 0px; /* Adjust based on side menu width */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .side-menu-container {
+        display: none;
+    }
+
+    .settings-content {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
+
+/* Settings Section */
+.settings-section {
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+}
+
+.settings-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Form Inputs */
+.setting-item input,
+.setting-item textarea,
+.setting-item select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.setting-item input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.setting-item textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Buttons */
+.save-button,
+.update-password-button,
+.import-button,
+.update-subscription-button,
+.update-addons-button {
+    padding: 12px 20px;
+    background-color: var(--secondary-color);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: pulse 6s infinite; /* Apply pulse animation */
+}
+
+.save-button:hover,
+.update-password-button:hover,
+.import-button:hover,
+.update-subscription-button:hover,
+.update-addons-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05); /* Slight scaling on hover for modern feel */
+}
+
+/* Profile Picture */
+.profile-picture-preview {
+    margin-top: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+}
+
+/* Subscription Management Section */
+.subscription-management {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: pulse 6s infinite; /* Apply pulse animation */
+}
+
+.subscription-management label {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.subscription-management select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Feature Add-Ons Section */
+.feature-addons {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: pulse 6s infinite; /* Apply pulse animation */
+}
+
+.feature-addons label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.feature-addons input[type="checkbox"] {
+    margin-right: 12px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .settings-content {
+        padding: 15px;
+    }
+
+    .settings-section {
+        padding-bottom: 15px;
+    }
+
+    .setting-item input,
+    .setting-item textarea,
+    .setting-item select {
+        font-size: 16px;
+    }
+
+    .save-button,
+    .update-password-button,
+    .import-button,
+    .update-subscription-button,
+    .update-addons-button {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.01);
+      opacity: 0.9;
+    }
+}

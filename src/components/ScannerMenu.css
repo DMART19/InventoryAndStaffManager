@@ -1,0 +1,57 @@
+/* Overlay for the scanner menu */
+.scanner-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  /* Content area for the scanner menu */
+  .scanner-menu-content {
+    background-color: white; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center text */
+  }
+  
+  /* Heading style */
+  .scanner-menu-content h2 {
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 24px; /* Font size for heading */
+    color: #333; /* Dark color for the heading */
+  }
+  
+  /* Button styles */
+  .scanner-menu-button {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Button hover effect */
+  .scanner-menu-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Close button color */
+  .scanner-menu-button:last-child {
+    background-color: #dc3545; /* Bootstrap danger red for close button */
+  }
+  
+  .scanner-menu-button:last-child:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  

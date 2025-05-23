@@ -1,0 +1,182 @@
+.quick-actions-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.quick-actions-menu {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Deeper shadow for a floating effect */
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out, float 4s ease-in-out infinite; /* Added floating animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px); /* Floating effect */
+    }
+}
+
+.quick-actions-menu__title {
+    font-size: 28px; /* Slightly larger for emphasis */
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700; /* Bold title */
+}
+
+.quick-actions-menu__description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.quick-actions-menu__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-actions-menu__item {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.quick-actions-menu__button {
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px; /* More rounded buttons */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.quick-actions-menu__button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.quick-actions-menu__button:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.quick-actions-menu__button--primary {
+    background-color: #fa5647; /* Coral */
+}
+
+.quick-actions-menu__button--primary:hover {
+    background-color: #fe2e24; /* Darker coral */
+    transform: translateY(-5px); /* More pronounced lift */
+    box-shadow: 0 8px 16px rgba(255, 111, 97, 0.3); /* Glow effect */
+}
+
+.quick-actions-menu__button--secondary {
+    background-color: #50309b; /* Purple */
+}
+
+.quick-actions-menu__button--secondary:hover {
+    background-color: #4a406a; /* Darker purple */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(107, 91, 149, 0.3);
+}
+
+.quick-actions-menu__button--tertiary {
+    background-color: #88b04b; /* Green */
+}
+
+.quick-actions-menu__button--tertiary:hover {
+    background-color: #6a8f3d; /* Darker green */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(136, 176, 75, 0.3);
+}
+
+.quick-actions-menu__button--dashboard {
+    background-color: #fdb823; /* Yellow */
+}
+
+.quick-actions-menu__button--dashboard:hover {
+    background-color: #ffb732; /* Darker yellow */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 204, 92, 0.3);
+}
+
+/* Submenu Styles */
+.quick-actions-menu__submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-actions-menu__submenu-title {
+    font-size: 20px; /* Larger submenu title */
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600; /* Semi-bold */
+}
+
+.quick-actions-menu__submenu-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.quick-actions-menu__submenu-item {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quick-actions-menu {
+        padding: 20px;
+    }
+
+    .quick-actions-menu__title {
+        font-size: 24px;
+    }
+
+    .quick-actions-menu__description {
+        font-size: 14px;
+    }
+
+    .quick-actions-menu__button {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+}

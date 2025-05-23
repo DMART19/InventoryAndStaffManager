@@ -1,0 +1,611 @@
+### Dashboard
+
+**Q1: How do I navigate the Dashboard page?**
+- **A1:** The Dashboard page provides an interactive layout with key metrics, recent activities, graphs, and info cards. Use the side menu for navigation, which is collapsible for better space management. On mobile devices, a top navigation bar replaces the side menu.
+1. What's the navigation process for the Dashboard?
+2. How can I explore the Dashboard interface?
+3. What steps should I follow to navigate the Dashboard?
+4. How do I get around on the Dashboard screen?
+5. What are the navigation tools available on the Dashboard?
+6. How can I move between sections on the Dashboard?
+7. What's the easiest way to navigate the Dashboard?
+8. How do I find my way around the Dashboard?
+9. What are the navigation features on the Dashboard?
+10. How do I use the Dashboard's navigation options?
+11. What are the main navigation elements on the Dashboard?
+12. How do I access different parts of the Dashboard?
+13. What are the navigation controls on the Dashboard?
+14. How do I explore different sections of the Dashboard?
+15. What are the navigation steps for the Dashboard?
+16. How do I navigate through the Dashboard interface?
+17. What are the navigation paths on the Dashboard?
+18. How do I switch between views on the Dashboard?
+19. What are the navigation menus on the Dashboard?
+20. How do I navigate the Dashboard layout?
+
+**Q2: How can I manage info cards on the Dashboard?**
+- **A2:** You can toggle editing mode to add or remove info cards by clicking the "Add Card" or "Done" button. Add up to 8 cards and remove any by clicking the "Remove" button on each card.
+1. What are the steps to manage info cards?
+2. How do I control the info cards on the Dashboard?
+3. What options do I have for managing info cards?
+4. How can I organize the info cards on the Dashboard?
+5. What are the steps to edit info cards on the Dashboard?
+6. How do I customize the info cards displayed?
+7. How can I add new info cards to the Dashboard?
+8. What are the management tools for info cards?
+9. How do I remove info cards from the Dashboard?
+10. What are the steps to arrange info cards?
+11. How do I toggle the editing mode for info cards?
+12. How can I adjust the info cards on the Dashboard?
+13. What are the customization options for info cards?
+14. How do I modify the info cards on the Dashboard?
+15. What are the steps to delete info cards?
+16. How do I rearrange the info cards on the Dashboard?
+17. What are the management features for info cards?
+18. How do I update the info cards on the Dashboard?
+19. What are the steps to configure info cards?
+20. How do I handle the info cards on the Dashboard?
+
+**Q3: What types of graphs are available on the Dashboard?**
+- **A3:** The Dashboard includes a bar chart for monthly performance data and a pie chart for task breakdowns. Hover over chart elements for more details.
+1. Which graph types can I find on the Dashboard?
+2. What kinds of charts are displayed on the Dashboard?
+3. What graphical data is shown on the Dashboard?
+4. What are the different graph types on the Dashboard?
+5. How many types of graphs are there on the Dashboard?
+6. What visual data representations are on the Dashboard?
+7. What graphs does the Dashboard support?
+8. Can you list the graphs available on the Dashboard?
+9. What are the graph options on the Dashboard?
+10. What data visualizations are on the Dashboard?
+11. What types of charts are available on the Dashboard?
+12. What graphical representations are on the Dashboard?
+13. What are the chart types on the Dashboard?
+14. What visualizations are available on the Dashboard?
+15. What are the graphical tools on the Dashboard?
+16. What types of data charts are on the Dashboard?
+17. What are the visual data options on the Dashboard?
+18. What graphical elements are on the Dashboard?
+19. What are the data visualization tools on the Dashboard?
+20. What types of visual data are on the Dashboard?
+
+**Q4: How do I view recent activities on the Dashboard?**
+- **A4:** The Recent Activity section displays tasks, training completions, inventory updates, and certification expirations in a paginated data table.
+1. Where can I see recent activities on the Dashboard?
+2. How can I check the latest activities on the Dashboard?
+3. What section shows recent activities on the Dashboard?
+4. How do I access the recent activities log?
+5. How can I monitor recent activities on the Dashboard?
+6. Where are recent activities listed on the Dashboard?
+7. How do I find recent tasks and updates on the Dashboard?
+8. What steps do I take to view recent activities?
+9. How can I see what's been happening recently on the Dashboard?
+10. Where can I track recent changes on the Dashboard?
+11. How do I review recent activities on the Dashboard?
+12. What are the steps to see recent activities?
+13. How can I access recent activity data on the Dashboard?
+14. What section displays recent activities on the Dashboard?
+15. How do I check recent updates on the Dashboard?
+16. How can I view the latest updates on the Dashboard?
+17. What are the steps to monitor recent activities?
+18. How do I find the recent activities section on the Dashboard?
+19. How can I see recent actions on the Dashboard?
+20. What are the steps to view recent activity logs?
+
+**Q5: How do I interact with the chatbot on the Dashboard?**
+- **A5:** Click the chatbot icon (David Martinez’s photo) to open or close the chatbot window. Use it to ask questions or get help.
+1. How can I use the chatbot on the Dashboard?
+2. What are the steps to open the chatbot on the Dashboard?
+3. How do I start a conversation with the chatbot?
+4. How can I ask the chatbot questions on the Dashboard?
+5. Where is the chatbot located on the Dashboard?
+6. How do I close the chatbot window on the Dashboard?
+7. What can the chatbot help me with on the Dashboard?
+8. How do I get help from the chatbot on the Dashboard?
+9. How can I access the chatbot feature on the Dashboard?
+10. What are the chatbot interaction options on the Dashboard?
+11. How do I open the chatbot on the Dashboard?
+12. How can I communicate with the chatbot on the Dashboard?
+13. What are the steps to interact with the chatbot?
+14. How do I find the chatbot on the Dashboard?
+15. How can I use the chatbot for assistance on the Dashboard?
+16. What are the steps to close the chatbot?
+17. How do I engage with the chatbot on the Dashboard?
+18. What are the chatbot features on the Dashboard?
+19. How do I initiate a chat with the chatbot?
+20. What are the steps to use the chatbot on the Dashboard?
+
+**Q6: Is the Dashboard mobile-friendly?**
+- **A6:** Yes, the Dashboard automatically adjusts to mobile, tablet, and desktop views. The side menu is replaced by a top navigation bar on mobile devices.
+1. Does the Dashboard work on mobile devices?
+2. Is the Dashboard optimized for mobile use?
+3. Can I use the Dashboard on my phone?
+4. How does the Dashboard look on mobile?
+5. Is the Dashboard responsive on mobile devices?
+6. Will the Dashboard adjust to my mobile screen?
+7. Can I navigate the Dashboard easily on mobile?
+8. Does the Dashboard support mobile navigation?
+9. How does the Dashboard perform on mobile devices?
+10. Is the Dashboard designed for mobile use?
+11. Can I access the Dashboard on a tablet?
+12. How does the Dashboard adapt to mobile screens?
+13. Is the Dashboard compatible with mobile devices?
+14. Does the Dashboard have a mobile version?
+15. Can I view the Dashboard on a smartphone?
+16. How does the Dashboard function on mobile?
+17. Is the Dashboard easy to use on mobile?
+18. Does the Dashboard work well on mobile devices?
+19. Can I interact with the Dashboard on mobile?
+20. How does the Dashboard appear on mobile devices?
+
+**Q7: Can I customize the Dashboard layout?**
+- **A7:** Yes, you can customize which info cards to display and which graphs to view in editing mode.
+1. How can I personalize the Dashboard layout?
+2. Are there options to customize the Dashboard?
+3. Can I change the arrangement of the Dashboard?
+4. How do I modify the Dashboard layout?
+5. What customization options are available for the Dashboard?
+6. Can I rearrange elements on the Dashboard?
+7. How do I tailor the Dashboard to my preferences?
+8. Is it possible to adjust the Dashboard layout?
+9. What are the customization features of the Dashboard?
+10. How can I make the Dashboard look the way I want?
+11. Can I configure the Dashboard layout?
+12. How do I set up the Dashboard layout?
+13. What are the layout options for the Dashboard?
+14. Can I design the Dashboard layout?
+15. How do I customize the Dashboard view?
+16. What are the layout settings for the Dashboard?
+17. Can I personalize the Dashboard appearance?
+18. How do I arrange the Dashboard components?
+19. What are the customization tools for the Dashboard?
+20. How do I adjust the Dashboard display?
+
+**Q8: How do I get more information about elements on the Dashboard?**
+- **A8:** Hover over elements like bars in the bar chart or sections of the pie chart to get detailed information.
+1. How can I learn more about Dashboard elements?
+2. Where can I find details about Dashboard components?
+3. How do I get additional info on Dashboard items?
+4. What steps do I take to get more details on the Dashboard?
+5. How can I explore Dashboard elements further?
+6. Where can I see more information about Dashboard features?
+7. How do I access detailed information on the Dashboard?
+8. What options are there for getting more info on the Dashboard?
+9. How can I dive deeper into Dashboard elements?
+10. Where can I find in-depth info about Dashboard components?
+11. How do I get more data about Dashboard elements?
+12. What are the steps to get detailed Dashboard info?
+13. How can I find out more about Dashboard features?
+14. Where can I get additional details on the Dashboard?
+15. How do I get more insights about Dashboard elements?
+16. What are the options for detailed Dashboard info?
+17. How can I get comprehensive info about Dashboard components?
+18. Where can I find more data on Dashboard elements?
+19. How do I get more detailed information on the Dashboard?
+20. What are the steps to get more Dashboard details?
+
+### DataTable Component
+
+**Q9: How do I search for data in the DataTable?**
+- **A9:** Use the search bar at the top of the table to filter data by entering a search term. The search applies to all columns.
+1. How can I filter data in the DataTable?
+2. What are the steps to search within the DataTable?
+3. How do I find specific data in the DataTable?
+4. Can I use a search bar in the DataTable?
+5. How do I apply filters to the DataTable?
+6. Where is the search function in the DataTable?
+7. How can I locate data in the DataTable?
+8. What options are there for searching the DataTable?
+9. How do I narrow down data in the DataTable?
+10. How can I look for specific information in the DataTable?
+11. What are the search tools in the DataTable?
+12. How do I filter results in the DataTable?
+13. What are the search features in the DataTable?
+14. How can I find data quickly in the DataTable?
+15. What are the search capabilities of the DataTable?
+16. How do I use the search bar in the DataTable?
+17. What are the search options in the DataTable?
+18. How do I perform a search in the DataTable?
+19. What are the steps to filter data in the DataTable?
+20. How do I search for specific entries in the DataTable?
+
+**Q10: Can I hide or show specific columns in the DataTable?**
+- **A10:** Yes, click the Filter Options button to open a dialog where you can choose which columns to display or hide.
+1. How do I control column visibility in the DataTable?
+2. Can I toggle columns in the DataTable?
+3. How can I hide columns I don't need in the DataTable?
+4. What are the steps to show or hide columns?
+5. How do I customize column visibility in the DataTable?
+6. Can I choose which columns to display in the DataTable?
+7. How do I manage column visibility in the DataTable?
+8. What options are there for hiding columns in the DataTable?
+9. How can I reveal hidden columns in the DataTable?
+10. How do I adjust column visibility in the DataTable?
+11. What are the column visibility settings in the DataTable?
+12. How do I change which columns are visible in the DataTable?
+13. Can I hide and show columns in the DataTable?
+14. What are the column visibility options in the DataTable?
+15. How do I configure column visibility in the DataTable?
+16. How can I display specific columns in the DataTable?
+17. What are the steps to hide columns in the DataTable?
+18. How do I select which columns to show in the DataTable?
+19. What are the column visibility controls in the DataTable?
+20. How do I modify column visibility in the DataTable?
+
+**Q11: How do I select rows in the DataTable?**
+- **A11:** Check the checkboxes on the left side of the table to select individual rows or use the checkbox at the top to select all rows on the current page.
+1. How can I choose rows in the DataTable?
+2. What are the steps to select multiple rows?
+3. How do I highlight rows in the DataTable?
+4. Can I select all rows in the DataTable?
+5. How do I pick specific rows in the DataTable?
+6. What options are there for row selection in the DataTable?
+7. How can I mark rows in the DataTable?
+8. How do I select rows for editing in the DataTable?
+9. How can I choose rows to delete in the DataTable?
+10. What is the process for selecting rows in the DataTable?
+11. How do I select individual rows in the DataTable?
+12. How can I select multiple rows at once in the DataTable?
+13. What are the row selection tools in the DataTable?
+14. How do I select rows for bulk actions in the DataTable?
+15. What are the steps to select rows in the DataTable?
+16. How do I select rows for further actions in the DataTable?
+17. How can I select rows for export in the DataTable?
+18. What are the row selection features in the DataTable?
+19. How do I select rows for analysis in the DataTable?
+20. How can I select rows for review in the DataTable?
+
+**Q12: How is data paginated in the DataTable?**
+- **A12:** The DataTable is paginated with controls at the bottom to navigate through pages. You can set the number of rows per page (5, 10, or 25).
+1. How does pagination work in the DataTable?
+2. Can I control the number of rows per page?
+3. How do I navigate through pages in the DataTable?
+4. What are the pagination options in the DataTable?
+5. How can I change the pagination settings?
+6. How do I move between pages in the DataTable?
+7. What is the default pagination in the DataTable?
+8. How can I set the number of rows per page?
+9. How do I use pagination controls in the DataTable?
+10. What are the steps to paginate data in the DataTable?
+11. How do I manage pagination in the DataTable?
+12. What are the pagination features in the DataTable?
+13. How can I adjust the pagination in the DataTable?
+14. How do I navigate through paginated data in the DataTable?
+15. What are the pagination settings in the DataTable?
+16. How do I control pagination in the DataTable?
+17. What are the steps to navigate through pages in the DataTable?
+18. How do I set pagination preferences in the DataTable?
+19. How do I paginate through large datasets in the DataTable?
+20. What are the pagination tools in the DataTable?
+
+**Q13: How do I edit or delete rows in the DataTable?**
+- **A13:** Click the Edit icon to open a dialog for editing row data or the Delete icon to trigger a confirmation dialog for deletion.
+1. How can I modify rows in the DataTable?
+2. What are the steps to delete a row?
+3. How do I update row data in the DataTable?
+4. Can I remove rows from the DataTable?
+5. How do I access the edit options for rows?
+6. What options are there for editing rows?
+7. How can I delete multiple rows in the DataTable?
+8. How do I confirm row deletion in the DataTable?
+9. What is the process for editing row data?
+10. How can I remove a row from the DataTable?
+11. How do I edit row details in the DataTable?
+12. What are the steps to delete rows in the DataTable?
+13. How do I modify row information in the DataTable?
+14. What are the row editing features in the DataTable?
+15. How can I delete selected rows in the DataTable?
+16. How do I edit multiple rows in the DataTable?
+17. What are the row deletion options in the DataTable?
+18. How do I edit a specific row in the DataTable?
+19. What are the steps to modify rows in the DataTable?
+20. How do I delete a row in the DataTable?
+
+**Q14: Can I export DataTable data to CSV?**
+- **A14:** Yes, click the Export to CSV button to download the visible table data in CSV format.
+1. How do I export the DataTable to CSV?
+2. What are the steps to download DataTable data?
+3. Can I save DataTable data as a CSV file?
+4. How do I get DataTable data in CSV format?
+5. What options are there for exporting DataTable data?
+6. How can I export visible data from the DataTable?
+7. How do I download the DataTable as a CSV?
+8. What is the process for exporting DataTable data?
+9. Can I export filtered DataTable data to CSV?
+10. How do I save DataTable data for offline use?
+11. What are the export options in the DataTable?
+12. How do I export DataTable data to a file?
+13. Can I export DataTable data to Excel?
+14. How do I export the DataTable contents?
+15. What are the steps to export DataTable data to CSV?
+16. How do I export DataTable data for analysis?
+17. What are the export features in the DataTable?
+18. How can I export DataTable data to a spreadsheet?
+19. How do I export DataTable data for reporting?
+20. What are the export tools in the DataTable?
+
+### Top Navigation Bar
+
+**Q15: How do I access the menu from the Top Navigation Bar?**
+- **A15:** Click the hamburger icon on the left side to expand the menu and access sections like Dashboard, Staff, Inventory, Tasks, Calendar, and Settings.
+1. How can I open the menu from the top bar?
+2. What are the steps to access the menu?
+3. How do I navigate using the Top Navigation Bar?
+4. Where is the menu located in the Top Navigation Bar?
+5. How do I expand the menu from the top bar?
+6. What options are there in the Top Navigation Bar?
+7. How can I view the menu items in the Top Navigation Bar?
+8. How do I use the Top Navigation Bar to access sections?
+9. What is the process for opening the menu from the top bar?
+10. How do I find the menu in the Top Navigation Bar?
+11. How can I access different sections from the Top Navigation Bar?
+12. What are the navigation options in the Top Navigation Bar?
+13. How do I open the menu from the top navigation?
+14. What are the steps to view the menu in the Top Navigation Bar?
+15. How do I access sections from the Top Navigation Bar?
+16. What are the menu access options in the Top Navigation Bar?
+17. How can I navigate to different sections from the Top Navigation Bar?
+18. How do I use the Top Navigation Bar for navigation?
+19. What are the menu features in the Top Navigation Bar?
+20. How do I access the main menu from the Top Navigation Bar?
+
+**Q16: How do I view my profile settings?**
+- **A16:** Click your profile photo next to the hamburger menu to open a dropdown with options for Account Settings and Logout.
+1. How can I access my profile settings?
+2. Where are the profile settings located?
+3. How do I open my profile options?
+4. What are the steps to view my profile?
+5. How can I manage my profile settings?
+6. How do I find my profile settings?
+7. What options are there in my profile settings?
+8. How do I navigate to my profile settings?
+9. How can I see my account details?
+10. What is the process for viewing profile settings?
+11. How do I access my account settings?
+12. Where can I find my profile options?
+13. How do I open my profile settings?
+14. What are the profile management options?
+15. How can I view my account information?
+16. What are the steps to access profile settings?
+17. How do I navigate to my account settings?
+18. How can I check my profile details?
+19. What are the profile settings options?
+20. How do I view my account profile?
+
+**Q17: How do I check notifications in the Top Navigation Bar?**
+- **A17:** Click the notifications bell on the right side to view a dropdown list of recent notifications. Click on a notification to view more details.
+1. How can I view notifications from the top bar?
+2. Where are notifications located in the Top Navigation Bar?
+3. How do I access my notifications?
+4. What are the steps to check notifications?
+5. How can I see recent notifications?
+6. How do I open the notifications dropdown?
+7. What options are there for viewing notifications?
+8. How do I navigate to notifications in the Top Navigation Bar?
+9. How can I check for new alerts?
+10. What is the process for viewing notifications from the top bar?
+11. How do I view my notification list?
+12. Where can I find notifications in the Top Navigation Bar?
+13. How do I access the notifications menu?
+14. What are the steps to view notification details?
+15. How can I see my latest notifications?
+16. How do I check the notification list?
+17. What are the notification features in the Top Navigation Bar?
+18. How do I view notification alerts?
+19. How can I access notifications from the top bar?
+20. What are the steps to check notifications in the Top Navigation Bar?
+
+### Monthly Data Bar Chart
+
+**Q18: What does the Monthly Data Bar Chart display?**
+- **A18:** The bar chart displays monthly data trends with each bar representing a month's data value. Hover over bars for detailed information.
+1. What information is shown in the Monthly Data Bar Chart?
+2. How does the Monthly Data Bar Chart present data?
+3. What data is visualized in the Monthly Data Bar Chart?
+4. What are the elements of the Monthly Data Bar Chart?
+5. How is data represented in the Monthly Data Bar Chart?
+6. What metrics are shown in the Monthly Data Bar Chart?
+7. What can I learn from the Monthly Data Bar Chart?
+8. How does the Monthly Data Bar Chart help with data analysis?
+9. What trends are shown in the Monthly Data Bar Chart?
+10. What is the purpose of the Monthly Data Bar Chart?
+11. What kind of data is displayed in the Monthly Data Bar Chart?
+12. How does the Monthly Data Bar Chart visualize data?
+13. What are the data points in the Monthly Data Bar Chart?
+14. What insights can I gain from the Monthly Data Bar Chart?
+15. How does the Monthly Data Bar Chart represent monthly data?
+16. What are the key features of the Monthly Data Bar Chart?
+17. How does the Monthly Data Bar Chart show data trends?
+18. What are the components of the Monthly Data Bar Chart?
+19. How does the Monthly Data Bar Chart display monthly performance?
+20. What are the data categories in the Monthly Data Bar Chart?
+
+**Q19: How do I read the Monthly Data Bar Chart?**
+- **A19:** The X-axis represents months, and the Y-axis represents data values ranging from 0 to 7000. Each bar's height indicates the month's data value.
+1. How can I interpret the Monthly Data Bar Chart?
+2. What are the steps to understand the Monthly Data Bar Chart?
+3. How do I analyze the Monthly Data Bar Chart?
+4. What should I look for in the Monthly Data Bar Chart?
+5. How do I make sense of the Monthly Data Bar Chart?
+6. What insights can I gain from the Monthly Data Bar Chart?
+7. How do I read the data in the Monthly Data Bar Chart?
+8. What does each bar in the Monthly Data Bar Chart represent?
+9. How do I compare data in the Monthly Data Bar Chart?
+10. What is the best way to read the Monthly Data Bar Chart?
+11. How do I interpret the bars in the Monthly Data Bar Chart?
+12. What are the key points to note in the Monthly Data Bar Chart?
+13. How do I analyze the trends in the Monthly Data Bar Chart?
+14. What are the steps to read the Monthly Data Bar Chart?
+15. How do I understand the Monthly Data Bar Chart?
+16. What are the data interpretation steps for the Monthly Data Bar Chart?
+17. How do I read the monthly performance data in the Monthly Data Bar Chart?
+18. What are the data reading techniques for the Monthly Data Bar Chart?
+19. How do I interpret the monthly trends in the Monthly Data Bar Chart?
+20. What are the data analysis steps for the Monthly Data Bar Chart?
+
+### InfoCard
+
+**Q20: What information does an InfoCard display?**
+- **A20:** An InfoCard displays a title, value, description, and icon representing key metrics or data points.
+1. What details are shown on an InfoCard?
+2. How does an InfoCard present information?
+3. What data is included in an InfoCard?
+4. What are the components of an InfoCard?
+5. How is information structured on an InfoCard?
+6. What metrics are displayed on an InfoCard?
+7. What can I see on an InfoCard?
+8. How does an InfoCard provide information?
+9. What is the purpose of an InfoCard?
+10. What data points are shown on an InfoCard?
+11. What kind of information is displayed on an InfoCard?
+12. How does an InfoCard show data?
+13. What are the elements of an InfoCard?
+14. What insights can I gain from an InfoCard?
+15. How does an InfoCard present key metrics?
+16. What are the main features of an InfoCard?
+17. How does an InfoCard display important data?
+18. What are the data categories on an InfoCard?
+19. How does an InfoCard show key information?
+20. What are the data visualization elements on an InfoCard?
+
+**Q21: How do I read an InfoCard?**
+- **A21:** The icon provides a visual cue, the title explains the metric, the value shows the data point, and the description provides additional context.
+1. How can I interpret an InfoCard?
+2. What are the steps to understand an InfoCard?
+3. How do I analyze the information on an InfoCard?
+4. What should I look for on an InfoCard?
+5. How do I make sense of an InfoCard?
+6. What insights can I gain from an InfoCard?
+7. How do I read the data on an InfoCard?
+8. What does each element on an InfoCard represent?
+9. How do I compare data on an InfoCard?
+10. What is the best way to read an InfoCard?
+11. How do I interpret the metrics on an InfoCard?
+12. What are the key points to note on an InfoCard?
+13. How do I analyze the trends on an InfoCard?
+14. What are the steps to read an InfoCard?
+15. How do I understand the InfoCard data?
+16. What are the data interpretation steps for an InfoCard?
+17. How do I read the key metrics on an InfoCard?
+18. What are the data reading techniques for an InfoCard?
+19. How do I interpret the information on an InfoCard?
+20. What are the data analysis steps for an InfoCard?
+
+### PieChart
+
+**Q22: What does the PieChart display?**
+- **A22:** The PieChart displays data as a circular chart with slices representing different categories. Each slice's size is proportional to its category's value.
+1. What information is shown in the PieChart?
+2. How does the PieChart present data?
+3. What data is visualized in the PieChart?
+4. What are the elements of the PieChart?
+5. How is data represented in the PieChart?
+6. What metrics are shown in the PieChart?
+7. What can I learn from the PieChart?
+8. How does the PieChart help with data analysis?
+9. What trends are shown in the PieChart?
+10. What is the purpose of the PieChart?
+11. What kind of data is displayed in the PieChart?
+12. How does the PieChart visualize data?
+13. What are the data points in the PieChart?
+14. What insights can I gain from the PieChart?
+15. How does the PieChart represent percentage data?
+16. What are the key features of the PieChart?
+17. How does the PieChart show data proportions?
+18. What are the components of the PieChart?
+19. How does the PieChart display category data?
+20. What are the data categories in the PieChart?
+
+**Q23: How do I read the PieChart?**
+- **A23:** Hover over slices to see the exact percentage value. The legend at the top labels each color with its corresponding category.
+1. How can I interpret the PieChart?
+2. What are the steps to understand the PieChart?
+3. How do I analyze the PieChart?
+4. What should I look for in the PieChart?
+5. How do I make sense of the PieChart?
+6. What insights can I gain from the PieChart?
+7. How do I read the data in the PieChart?
+8. What does each slice in the PieChart represent?
+9. How do I compare data in the PieChart?
+10. What is the best way to read the PieChart?
+11. How do I interpret the slices in the PieChart?
+12. What are the key points to note in the PieChart?
+13. How do I analyze the proportions in the PieChart?
+14. What are the steps to read the PieChart?
+15. How do I understand the PieChart data?
+16. What are the data interpretation steps for the PieChart?
+17. How do I read the percentage data in the PieChart?
+18. What are the data reading techniques for the PieChart?
+19. How do I interpret the category data in the PieChart?
+20. What are the data analysis steps for the PieChart?
+
+### SideMenu Component
+
+**Q24: How do I navigate using the SideMenu?**
+- **A24:** Click on menu items like Dashboard, Staff, Inventory, Tasks, Calendar, and Settings to access different sections. The menu is responsive and adjusts to different screen sizes.
+1. How can I use the SideMenu for navigation?
+2. What are the steps to navigate with the SideMenu?
+3. How do I access different sections using the SideMenu?
+4. What options are available in the SideMenu?
+5. How do I move around using the SideMenu?
+6. What is the process for navigating with the SideMenu?
+7. How can I find specific sections in the SideMenu?
+8. How do I open the SideMenu?
+9. What are the main features of the SideMenu?
+10. How do I use the SideMenu to access different parts of the application?
+11. What are the navigation options in the SideMenu?
+12. How do I access sections from the SideMenu?
+13. What are the steps to navigate with the SideMenu?
+14. How can I navigate to different sections using the SideMenu?
+15. How do I use the SideMenu for quick access?
+16. What are the navigation features in the SideMenu?
+17. How do I navigate through the SideMenu?
+18. What are the steps to access sections in the SideMenu?
+19. How do I use the SideMenu to navigate the application?
+20. What are the navigation tools in the SideMenu?
+
+**Q25: How do I manage notifications in the SideMenu?**
+- **A25:** Click the notifications bell to view a dropdown list of notifications. Click on a notification to mark it as read and view more details.
+1. How can I view notifications in the SideMenu?
+2. What are the steps to check notifications in the SideMenu?
+3. How do I access the notifications dropdown?
+4. What options are there for managing notifications?
+5. How do I mark notifications as read in the SideMenu?
+6. How can I see recent alerts in the SideMenu?
+7. What is the process for viewing notifications in the SideMenu?
+8. How do I open the notifications list in the SideMenu?
+9. How can I check for new notifications in the SideMenu?
+10. What are the notification features in the SideMenu?
+11. How do I view the notification list in the SideMenu?
+12. What are the steps to manage notifications in the SideMenu?
+13. How do I access notification details in the SideMenu?
+14. How can I see the latest notifications in the SideMenu?
+15. What are the steps to view notifications in the SideMenu?
+16. How do I manage the notification list in the SideMenu?
+17. How can I check notification details in the SideMenu?
+18. What are the notification management options in the SideMenu?
+19. How do I view and manage notifications in the SideMenu?
+20. What are the steps to access notifications in the SideMenu?
+
+**Q26: How do I access my account settings?**
+- **A26:** Click your profile photo at the top of the SideMenu and select Account Settings from the dropdown.
+1. How can I view my account settings?
+2. Where are the account settings located?
+3. How do I open the account settings menu?
+4. What are the steps to access account settings?
+5. How do I find my account settings?
+6. What options are there in the account settings?
+7. How do I navigate to my account settings?
+8. How do I access my profile settings?
+9. What is the process for viewing account settings?
+10. How do I manage my account settings?
+11. How do I open my account settings?
+12. Where can I find my account options?
+13. How do I view my account details?
+14. What are the account management options?
+15. How can I view my profile settings?
+16. What are the steps to access profile settings?
+17. How do I navigate to my profile settings?
+18. How can I check my account details?
+19. What are the profile settings options?
+20. How do I view my profile information?

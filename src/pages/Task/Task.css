@@ -1,0 +1,434 @@
+/* Define the pulse animation */
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.01);
+      opacity: 0.9;
+    }
+  }
+  
+  /* Overall container for the task page */
+  .task-management-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f7fa;
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+  
+  /* Top navbar styles */
+  .top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c3e50; /* Matching side menu color */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Task table container */
+  .task-table-container {
+    padding: 20px;
+    margin-left: 0px; /* Adjust for side menu width */
+    width: calc(100% - 220px); /* Adjust for side menu width */
+    overflow-x: auto;
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* Task table title */
+  .task-table-title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    animation: pulse 6s infinite; /* Add pulse animation */
+  }
+  
+  /* Dropdown container */
+  .dropdown-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 8px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .dropdown-header {
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    animation: pulse 6s infinite; /* Add pulse animation */
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .dropdown-search {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown-list li {
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .dropdown-list li:hover {
+    background: #f0f0f0;
+  }
+  
+  .dropdown-list input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .dropdown-list label {
+    font-size: 14px;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+  
+  .dropdown-list li.no-results {
+    color: #888;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown-item.selected {
+    background-color: #cce5ff;
+    font-weight: bold;
+  }
+  
+  /* Form Container */
+  .add-task-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 25px auto;
+    transition: all 0.3s ease-in-out;
+    animation: pulse 6s infinite; /* Add pulse animation */
+  }
+  
+  /* Hover effect on the form container */
+  .add-task-form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+  
+  /* Title of the form */
+  .add-task-form h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Form Fields Styling */
+  .add-task-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input Fields Styling */
+  .add-task-form input,
+  .add-task-form textarea,
+  .add-task-form select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
+    width: 100%; /* Make input fields take up full width */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  /* Input focus state */
+  .add-task-form input:focus,
+  .add-task-form textarea:focus,
+  .add-task-form select:focus {
+    outline: none;
+    border: 2px solid #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+    background-color: #fff;
+  }
+  
+  /* Add Task Button */
+  .add-task-button {
+    background-color: #27ae60; /* Green color */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: pulse 6s infinite; /* Add pulse animation */
+  }
+  
+  /* Hover effect for add task button */
+  .add-task-button:hover {
+    background-color: #219653; /* Darker green */
+    transform: translateY(-2px);
+  }
+  
+  /* Focus effect for add task button */
+  .add-task-button:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(39, 174, 96, 0.4);
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Popup styling */
+  .popup-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+  }
+  
+  .popup-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto; /* Allows vertical scrolling if content exceeds max height */
+    animation: pulse 6s infinite; /* Add pulse animation */
+  }
+  
+  .popup-form h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .popup-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .popup-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .popup-form .form-group input,
+  .popup-form .form-group textarea,
+  .popup-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .popup-form .form-group input:focus,
+  .popup-form .form-group textarea:focus,
+  .popup-form .form-group select:focus {
+    outline: none;
+    border: 2px solid #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+  }
+  
+  .popup-form .form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .popup-form .form-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 6s infinite; /* Add pulse animation */
+  }
+  
+  .popup-form .form-buttons button.add-button {
+    background-color: #3498db; /* Blue color */
+    color: white;
+  }
+  
+  .popup-form .form-buttons button.add-button:hover {
+    background-color: #2980b9; /* Darker blue */
+  }
+  
+  .popup-form .form-buttons button.cancel-button {
+    background-color: #e74c3c; /* Red color */
+    color: white;
+  }
+  
+  .popup-form .form-buttons button.cancel-button:hover {
+    background-color: #c0392b; /* Darker red */
+  }
+  
+  /* Section styling */
+  .section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: pulse 6s infinite; /* Add pulse animation */
+  }
+  
+  .section h2 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Table styling */
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .table tr:hover {
+    background-color: #f5f7fa;
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .task-management-container {
+      margin-top: 30px;
+    }
+    .task-table-container {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .task-table-title {
+      font-size: 24px;
+    }
+  
+    .add-task-form {
+      padding: 20px;
+    }
+  
+    .add-task-form h3 {
+      font-size: 20px;
+    }
+  
+    .add-task-form input,
+    .add-task-form textarea,
+    .add-task-form select {
+      font-size: 14px;
+    }
+  
+    .add-task-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .popup-form {
+      padding: 20px;
+    }
+  
+    .popup-form h3 {
+      font-size: 20px;
+    }
+  
+    .section h2 {
+      font-size: 20px;
+    }
+  }

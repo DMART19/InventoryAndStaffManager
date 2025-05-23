@@ -1,0 +1,283 @@
+/* General Styles */
+.onboarding-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: float 6s ease-in-out infinite;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Welcome Step Styles */
+  .welcome-step {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    margin: 20px 0;
+  }
+  
+  .welcome-step h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900; /* Bolder font weight */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Stronger drop shadow */
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .welcome-step p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #555;
+    line-height: 1.8;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .welcome-step button {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px; /* More rounded corners */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    animation: pulse 2s infinite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-step button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px) scale(1.05); /* Scale-up effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .welcome-step button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Feature Step Styles */
+  .feature-step {
+    background: white;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    margin: 20px 0;
+  }
+  
+  .feature-step h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900; /* Bolder font weight */
+    background: linear-gradient(135deg, #ff6b6b, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Stronger drop shadow */
+    animation: shake 1.5s infinite;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-1deg);
+    }
+    75% {
+      transform: rotate(1deg);
+    }
+  }
+  
+  .feature-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 40px;
+  }
+  
+  .feature-content ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+    flex: 1;
+  }
+  
+  .feature-content ul li {
+    margin-bottom: 25px; /* Increased line spacing */
+    font-size: 1.2rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .feature-content ul li:hover {
+    transform: translateX(10px);
+    color: #6a11cb;
+  }
+  
+  .feature-content ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #6a11cb;
+    font-size: 1rem; /* Smaller icon */
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-content ul li:hover::before {
+    transform: scale(1.2);
+  }
+  
+  .snapshot img {
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .snapshot img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Enhanced hover shadow */
+  }
+  
+  /* Navigation Buttons */
+ /* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  /* Style only buttons with the class "onboarding-button" */
+  .onboarding-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px; /* More rounded corners */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    animation: pulse 6s infinite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .onboarding-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px) scale(1.05); /* Scale-up effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .onboarding-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .onboarding-container {
+      padding: 5px 10px;
+      min-height: auto;
+    }
+  
+    .feature-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .snapshot img {
+      max-width: 100%;
+      margin-top: -30px;
+    }
+  
+    .welcome-step,
+    .feature-step {
+      padding: 30px;
+    }
+  
+    .welcome-step h1 {
+      font-size: 2.5rem;
+    }
+  
+    .feature-step h2 {
+      font-size: 2rem;
+    }
+  
+    .welcome-step p {
+      font-size: 1.2rem;
+    }
+  
+    .feature-content ul li {
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }

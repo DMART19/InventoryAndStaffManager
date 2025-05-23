@@ -1,0 +1,133 @@
+/* Overall container for the sign-up page */
+.signup-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f7fa;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Sign-in link style */
+.signin-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signin-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signin-link a:hover {
+    color: #217dbb;
+    text-decoration: underline;
+}
+
+/* Sign-up button */
+.signup-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    width: 100%;
+    display: inline-block;
+}
+
+/* Hover effect for sign-up button */
+.signup-button:hover {
+    background-color: #217dbb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(33, 125, 187, 0.3);
+}
+
+/* Active state for better feedback */
+.signup-button:active {
+    background-color: #1a6696;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(26, 102, 150, 0.3);
+}
+
+/* Disabled state for form validation */
+.signup-button:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Sign-up content container */
+.signup-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Sign-up form */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form group for labels and inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Label styling */
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus state */
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border: 2px solid #3498db; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4); /* Blue glow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signup-content {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+    }
+
+    .signup-button {
+        font-size: 14px;
+    }
+}

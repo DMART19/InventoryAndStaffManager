@@ -1,0 +1,208 @@
+.side-menu {
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #002244); /* Match top navbar gradient */
+  color: #f8f9fa; /* Light text color for contrast */
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  width: 210px;
+  max-width: 210px;
+  box-sizing: border-box;
+  z-index: 1000; /* Ensure the side menu is above other content */
+  font-family: 'Poppins', sans-serif; /* Match top navbar font */
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.profile-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center; /* Align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Space between profile photo, bell, and name */
+}
+
+.profile-photo {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the photo circular */
+  border: 2px solid white; /* Adds a border around the photo */
+}
+
+/* Notifications Bell in Side Menu */
+.notifications-bell-side-menu {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px; /* Adjust size as needed */
+  color: white;
+}
+
+.notification-dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* Notifications Dropdown */
+.notifications-dropdown {
+  position: absolute;
+  top: 60px; /* Adjust this value to position the dropdown below the bell */
+  left: 20px; /* Adjust this value to align the dropdown with the bell */
+  background-color: #ffffff; /* White background for better contrast */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  z-index: 10003; /* Higher z-index to ensure it appears above the table header */
+  max-height: 300px;
+  overflow-y: auto;
+  width: 250px; /* Fixed width */
+}
+
+.notifications-list {
+  padding: 10px;
+}
+
+.notification-item {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0; /* Light gray border between items */
+  cursor: pointer;
+  color: #333333; /* Dark gray text for better contrast */
+  font-size: 14px; /* Standard font size */
+  transition: background-color 0.2s ease; /* Smooth hover transition */
+}
+
+.notification-item.unread {
+  background-color: #f8f9fa; /* Light gray background for unread notifications */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+.notification-item:hover {
+  background-color: #e9ecef; /* Light gray hover effect */
+}
+
+/* Notification Details Modal */
+.notification-details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10004; /* Higher z-index to ensure it appears above everything */
+}
+
+.notification-details-content {
+  background-color: #ffffff; /* White background for the modal */
+  padding: 24px; /* More padding for a spacious look */
+  border-radius: 12px; /* Rounded corners */
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+  z-index: 10002; /* Ensure the modal content is above the overlay */
+}
+
+.notification-details-content h3 {
+  margin-top: 0;
+  color: #333333; /* Dark gray for the title */
+  font-size: 18px; /* Larger font size for the title */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+.notification-details-content p {
+  color: #555555; /* Medium gray for the details */
+  font-size: 14px; /* Standard font size for readability */
+  line-height: 1.5; /* Improved line spacing */
+}
+
+.notification-details-content button {
+  margin-top: 16px; /* More space above the button */
+  padding: 10px 20px; /* Larger padding for better clickability */
+  background-color: #007bff; /* Blue background for the button */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+  border-radius: 8px; /* Rounded corners for the button */
+  font-size: 14px; /* Standard font size */
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth hover transition */
+}
+
+.notification-details-content button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Existing styles for the side menu */
+.side-menu {
+  height: 100vh;
+  background-color: #2c3e50;
+  color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  width: 210px;
+  max-width: 210px;
+  box-sizing: border-box;
+  z-index: 1000; /* Ensure the side menu is above other content */
+}
+
+.side-menu h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.menu-item {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.menu-item:hover {
+  background-color: #34495e;
+}
+
+.menu-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.menu-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.menu-item:hover .menu-text {
+  font-weight: bold;
+}

@@ -1,0 +1,482 @@
+/* ===== Main Container Styles ===== */
+/* For the edit toggle button */
+.edit-toggle-button {
+    padding: 8px 16px;
+    min-width: 120px; /* Fixed width */
+    height: 36px; /* Fixed height */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap; /* Prevent text wrapping */
+    flex-shrink: 0; /* Prevent shrinking */
+    transition: all 0.2s ease;
+  }
+  
+  /* For the add-first-card button */
+  .add-first-card-button {
+    padding: 8px 16px;
+    min-width: 160px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  
+  /* For the available card buttons */
+  .available-card-button {
+    padding: 8px 12px;
+    min-width: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Section header container */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px; /* Maintain consistent gap */
+    width: 100%;
+  }
+  
+  /* Prevent the header from growing too much */
+  .section-header h3 {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+.info-cards-section {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+  }
+  
+  .info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ===== Header Styles ===== */
+  .section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+  }
+  
+  .section-header h3::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4299e1;
+    transition: width 0.3s ease;
+  }
+  
+  .section-header:hover h3::after {
+    width: 100%;
+  }
+  
+  /* ===== Info Cards Grid ===== */
+  .info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ===== Individual Card Styles ===== */
+  .info-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  .card-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* ===== Card Actions ===== */
+  .card-actions {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .info-card:hover .card-actions {
+    opacity: 1;
+  }
+  
+  .card-action-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: inherit;
+    transition: all 0.2s ease;
+  }
+  
+  .card-action-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
+  
+  .card-action-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* ===== Color Picker ===== */
+  .color-picker-container {
+    position: relative;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .color-picker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+  
+  .color-picker-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  
+  .color-picker::-webkit-color-swatch {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ===== Edit Toggle Button ===== */
+  .toggle-editing-button,
+  .edit-toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: #4a6bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    height: 48px;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .toggle-editing-button:hover,
+  .edit-toggle-button:hover {
+    background: #3a5bef;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggle-editing-button:active,
+  .edit-toggle-button:active {
+    transform: translateY(0);
+  }
+  
+  /* ===== Available Cards Panel ===== */
+  .available-info-cards,
+  .available-cards-panel {
+    width: 100%;
+    margin-top: 16px;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .panel-header h4 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .card-counter {
+    background-color: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #495057;
+  }
+  
+  /* ===== Available Cards Grid ===== */
+  .available-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+    margin-top: 12px;
+  }
+  
+  .available-card-button {
+    padding: 0.75rem;
+    background-color: #f1f3f5;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  .available-card-button:hover:not(:disabled) {
+    background-color: #e9ecef;
+    transform: translateY(-1px);
+  }
+  
+  .available-card-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* ===== Empty State ===== */
+  .empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .empty-state p {
+    margin-bottom: 1rem;
+    color: #6c757d;
+  }
+  
+  .add-first-card-button {
+    padding: 0.5rem 1rem;
+    background-color: #4a6bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto;
+  }
+  
+  .add-first-card-button:hover {
+    background-color: #3a5bef;
+  }
+  
+  /* ===== Tooltip Styles ===== */
+  .hover-tooltip {
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .hover-tooltip:hover {
+    opacity: 0.9;
+  }
+  
+  .custom-tooltip {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem !important;
+    z-index: 1000;
+    max-width: 280px;
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    color: #f7fafc;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 
+                0 2px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  }
+  
+  .custom-tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .custom-tooltip::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: inherit;
+    transform: rotate(45deg);
+    bottom: -6px;
+    left: 50%;
+    margin-left: -6px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* ===== Tooltip Icons ===== */
+  .info-icon,
+  .tooltip-icon {
+    color: #6c757d;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(113, 128, 150, 0.1);
+  }
+  
+  .info-icon:hover,
+  .tooltip-icon:hover {
+    color: #4299e1;
+    background: rgba(66, 153, 225, 0.1);
+    transform: scale(1.1) rotate(10deg);
+  }
+  
+  .info-icon:active,
+  .tooltip-icon:active {
+    transform: scale(0.95);
+  }
+  
+  /* Dark mode tooltip icons */
+  .info-card[style*="background-color: #000000"] .tooltip-icon,
+  .info-card[style*="background-color: #1a202c"] .tooltip-icon,
+  .info-card[style*="background-color: #2d3748"] .tooltip-icon {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .info-card[style*="background-color: #000000"] .tooltip-icon:hover,
+  .info-card[style*="background-color: #1a202c"] .tooltip-icon:hover,
+  .info-card[style*="background-color: #2d3748"] .tooltip-icon:hover {
+    color: white;
+  }
+  
+  /* ===== Animations ===== */
+  @keyframes tooltipIn {
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .react-tooltip {
+    animation: tooltipIn 0.2s ease-out forwards;
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 768px) {
+    .info-cards,
+    .info-cards-section {
+      flex-direction: column;
+      gap: 8px;
+      padding: 16px;
+    }
+  
+    .info-card {
+      width: 100%;
+      max-width: none;
+    }
+  
+    .toggle-editing-button,
+    .edit-toggle-button {
+      width: auto;
+      min-width: 120px;
+      margin: 1px auto;
+      height: 48px;
+    }
+  
+    .available-info-cards,
+    .available-cards-panel {
+      padding: 16px;
+    }
+  
+    .available-card-button {
+      width: 100%;
+      margin: 4px 0;
+    }
+  }
