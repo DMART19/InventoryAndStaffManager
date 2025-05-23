@@ -1,6 +1,6 @@
 # Inventory and Staff Manager
 
-A React-based SaaS web application designed to help organizations efficiently manage their staff, inventory, training, tasks, and reporting — all in one platform. Built with scalability and compliance in mind, this application is especially suited for industries like healthcare, emergency services, logistics, and field operations.
+A React-based web application designed to help organizations efficiently manage their staff, inventory, training, tasks, and reporting — all in one platform. Built with scalability and compliance in mind, this application is especially suited for industries like healthcare, emergency services, logistics, and field operations.
 
 ## 🔧 Features
 
@@ -75,33 +75,6 @@ Lambda (for serverless functions)
 
 Sensitive credentials are managed via environment variables (.env), which are excluded from version control via .gitignore.
 
-👥 Contributing
-Contributions are welcome! You can help by:
-
-Reviewing and cleaning up code
-
-Improving component structure
-
-Integrating AWS services
-
-Creating new features or improving existing ones
-
-Steps to Contribute
-Fork the repository
-
-Create a new branch: git checkout -b feature-name
-
-Make your changes
-
-Commit and push: git push origin feature-name
-
-Submit a pull request
-
-📫 Contact
-David Martinez
-📍 Elk Grove, CA
-📧 martinezda1283@gmail.com
-🔗 GitHub Profile
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
